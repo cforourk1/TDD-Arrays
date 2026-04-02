@@ -49,7 +49,7 @@ describe("getLast", function () {
   });
 });
 
-describe.only("getFirstLast", function () {
+describe("getFirstLast", function () {
   it("returns [first, last] for a multi-element array", function () {
     expect(getFirstLast([1, 2, 3])).toEqual([1, 3]);
   });
@@ -112,7 +112,7 @@ describe("quintuple", function () {
   });
 });
 
-describe("pluralize", function () {
+describe.only("pluralize", function () {
   it("adds 's' to words not ending with 's'", function () {
     expect(pluralize(["cat", "dog"])).toEqual(["cats", "dogs"]);
   });

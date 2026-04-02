@@ -54,11 +54,13 @@ export function getFirstLast(array) {
 } else if (array.length === 1) {
   return array;
 } else {
-// get the first and last and return together 
+// get the first and last and return together
   return [array[0], array[array.length - 1]];
 }
 }
 
+
+//function 4
 
 /**
  * @param {string} str1 - the first string
@@ -73,9 +75,20 @@ export function getFirstLast(array) {
  * @example
  * sharesFirstLetter("cat", "dog"); // false
  */
+
 export function sharesFirstLetter(str1, str2) {
-  // TODO
+    if (str1.length === 0 || str2.length === 0) {
+      return false;
+/* I thought at first I was feeding it too many operators but the issue was brackets - comparing if string length is greater than 0 and first elm the same
+*/
+    } else if (str1.length > 0 && str2.length > 0 && str1[0] === str2[0]) {
+      return true;
+    } else {
+      return false;
+    }
 }
+
+// function 5
 
 /**
  * @param {number[]} numbers - an array of numbers
@@ -89,8 +102,17 @@ export function sharesFirstLetter(str1, str2) {
  * quintuple([]); // []
  */
 export function quintuple(numbers) {
-  // TODO
+  let result = [];
+// empty array to return result into
+  for (let i = 0; i < numbers.length; i++) {
+// push new numbers into array
+  result.push(numbers[i] * 5)
+  }
+  return result;
 }
+
+
+//function 6
 
 /**
  * There is a general rule for making nouns plural in English:
@@ -110,8 +132,20 @@ export function quintuple(numbers) {
  * pluralize([]); // []
  */
 export function pluralize(words) {
-  // TODO
+  let result = [];
+// empty array to return result into
+  for (let i = 0; i < words.length; i++) {
+// I had the wrong syntax here push words end with s with es
+    if (words[i].endsWith('s')) {
+    result.push(words[i] + "es");
+  } else {
+  result.push(words[i] + "s")
+  }
 }
+  return result;
+}
+
+//function 7 
 
 /**
  * @param {boolean[]} attendance - an array representing student attendance
