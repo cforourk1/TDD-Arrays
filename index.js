@@ -243,5 +243,14 @@ for (let i = 0; i < playlist.length; i++) {
  * findSpy([["tree","lamp"],["pigeon","guard"]]); // null
  */
 export function findSpy(map) {
-  // TODO
+// outerloop to look at length and count
+for (let i = 0; i < map.length; i++) {
+// inner loop to count
+  for (let j = 0; j < map[i].length; j++)
+// if coordinates match 
+  if (map[i][j] === "spy") {
+      return [i, j];
+   }
+}
+  return null
 }

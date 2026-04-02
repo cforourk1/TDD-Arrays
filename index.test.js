@@ -176,7 +176,7 @@ describe("getLongestWord", function () {
 });
 
 // findSong
-describe.only("findSong", function () {
+describe("findSong", function () {
   it("returns the index of the song if found", function () {
     expect(findSong(["A", "B", "C"], "B")).toBe(1);
   });
@@ -198,7 +198,7 @@ describe.only("findSong", function () {
 });
 
 // findSpy
-describe("findSpy", function () {
+describe.only("findSpy", function () {
   it("returns [0,1] for [[X,spy], [X,X]]", function () {
     expect(
       findSpy([
