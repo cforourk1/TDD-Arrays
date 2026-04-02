@@ -203,6 +203,8 @@ if (sentence.length === 0) {
     return result
 }
 
+//function 9
+
 /**
  * @param {string[]} playlist - an array of song titles
  * @param {string} song - the name of a song to find
@@ -217,8 +219,15 @@ if (sentence.length === 0) {
  * findSong([], "Midnight Drive"); // -1
  */
 export function findSong(playlist, song) {
-  // TODO
+for (let i = 0; i < playlist.length; i++) {
+// iterator to loop throuhg the array and find if the song is in playlist
+  if (playlist[i] === song) {
+      return i;
+   }
 }
+  return -1
+}
+
 
 /**
  * @param {string[][]} map - a 2D array in which each element is a string that

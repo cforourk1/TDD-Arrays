@@ -154,7 +154,7 @@ describe("countAttendance", function () {
   });
 });
 
-describe.only("getLongestWord", function () {
+describe("getLongestWord", function () {
   it("returns the first longest word", function () {
     expect(getLongestWord(["sphinx", "of", "black", "quartz"])).toBe("sphinx");
   });
@@ -176,7 +176,7 @@ describe.only("getLongestWord", function () {
 });
 
 // findSong
-describe("findSong", function () {
+describe.only("findSong", function () {
   it("returns the index of the song if found", function () {
     expect(findSong(["A", "B", "C"], "B")).toBe(1);
   });
