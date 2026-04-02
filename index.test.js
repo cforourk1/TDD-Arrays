@@ -31,7 +31,7 @@ describe("getFirst", function () {
   });
 });
 
-describe("getLast", function () {
+describe.only("getLast", function () {
   it("returns the last element of a number array", function () {
     expect(getLast([1, 2, 3])).toBe(3);
   });

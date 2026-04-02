@@ -10,8 +10,11 @@
  * getFirst([true,false,true]); // true
  */
 export function getFirst(array) {
-  // TODO
+// returning 0 because thats where the first element starts
+    return array[0]
 }
+
+//function 2
 
 /**
  * @param {T[]} array - an array of elements of type T
@@ -25,7 +28,7 @@ export function getFirst(array) {
  * getLast([true,false,true]); // true
  */
 export function getLast(array) {
-  // TODO
+  return array[array.length - 1]
 }
 
 /**
@@ -42,7 +45,7 @@ export function getLast(array) {
  * getFirstLast([42]); // [42]
  */
 export function getFirstLast(array) {
-  // TODO
+    return 
 }
 
 /**
