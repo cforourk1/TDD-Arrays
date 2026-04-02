@@ -112,7 +112,7 @@ describe("quintuple", function () {
   });
 });
 
-describe.only("pluralize", function () {
+describe("pluralize", function () {
   it("adds 's' to words not ending with 's'", function () {
     expect(pluralize(["cat", "dog"])).toEqual(["cats", "dogs"]);
   });
@@ -154,7 +154,7 @@ describe("countAttendance", function () {
   });
 });
 
-describe("getLongestWord", function () {
+describe.only("getLongestWord", function () {
   it("returns the first longest word", function () {
     expect(getLongestWord(["sphinx", "of", "black", "quartz"])).toBe("sphinx");
   });

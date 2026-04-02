@@ -145,7 +145,7 @@ export function pluralize(words) {
   return result;
 }
 
-//function 7 
+//function 7
 
 /**
  * @param {boolean[]} attendance - an array representing student attendance
@@ -161,8 +161,18 @@ export function pluralize(words) {
  * countAttendance([]); // 0
  */
 export function countAttendance(attendance) {
-  // TODO
+  let result = 0;
+// empty array to return result into
+  for (let i = 0; i < attendance.length; i++) {
+// I had the wrong syntax here again! needed ===
+    if (attendance[i] === true) {
+    result += 1;
+  }
+  }     return result
 }
+
+//Function 8
+
 
 /**
  * @param {string[]} sentence - an array of words
@@ -176,8 +186,21 @@ export function countAttendance(attendance) {
  * @example
  * getLongestWord(["a", "ab", "abc"]); // "abc"
  */
+
 export function getLongestWord(sentence) {
-  // TODO
+let result = null;
+//start with result as null and then compare if it is 0
+if (sentence.length === 0) {
+       return null
+} for (let i = 0; i < sentence.length; i++) {
+  // iterator to loop throuhg the array
+  if (result === null || sentence[i].length > result.length) {
+/*if the result is null or the element length is greater than the result length - return next longest word
+*/
+    result = sentence[i]
+}
+}
+    return result
 }
 
 /**
