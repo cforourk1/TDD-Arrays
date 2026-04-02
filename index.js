@@ -28,6 +28,7 @@ export function getFirst(array) {
  * getLast([true,false,true]); // true
  */
 export function getLast(array) {
+// Array length minus one gets us the last one in the line
   return array[array.length - 1]
 }
 
@@ -44,9 +45,20 @@ export function getLast(array) {
  * @example
  * getFirstLast([42]); // [42]
  */
+
 export function getFirstLast(array) {
-    return 
+// if length is 0 return 0
+  if (array.length === 0) {
+  return [];
+//if array has one element return array
+} else if (array.length === 1) {
+  return array;
+} else {
+// get the first and last and return together 
+  return [array[0], array[array.length - 1]];
 }
+}
+
 
 /**
  * @param {string} str1 - the first string

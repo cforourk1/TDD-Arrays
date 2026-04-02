@@ -31,7 +31,7 @@ describe("getFirst", function () {
   });
 });
 
-describe.only("getLast", function () {
+describe("getLast", function () {
   it("returns the last element of a number array", function () {
     expect(getLast([1, 2, 3])).toBe(3);
   });
@@ -49,7 +49,7 @@ describe.only("getLast", function () {
   });
 });
 
-describe("getFirstLast", function () {
+describe.only("getFirstLast", function () {
   it("returns [first, last] for a multi-element array", function () {
     expect(getFirstLast([1, 2, 3])).toEqual([1, 3]);
   });
